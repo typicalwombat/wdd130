@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Hello Spooky";
+    src: url(../fonts/Hello\ Spooky.otf);
+}
+@font-face {
+    font-family: "Spooky Theme";
+    src: url(../fonts/Spooky\ Theme.otf);
+}
+@font-face {
+    font-family: "Death Bones";
+    src: url(../fonts/Death\ Bones.ttf);
+}
+
+nav {
+    display: inline-block;
+    font-family: "Hello Spooky";
+    font-size: 28px;
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    padding: 40px;
+}
+body {
+    text-align: center;
+    color: white;
+    background-color: #070519;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+h1 {
+    font-family: "Spooky Theme";
+    font-size: 4em;
+    color: orange;
+    grid-column: 1/4;
+    margin: 18px auto;
+}
+img {
+    border: orange 4px solid;
+    border-radius: 25px;
+    grid-column: 1/4;
+    margin: 20px auto;
+}
+h2 {
+    font-family: "Hello Spooky", "Spooky Theme";
+    color: orange;
+    font-size: 24px;
+}
+p {
+    font-family: "Death Bones", "Spooky Theme";
+    text-transform: lowercase;
+    font-size: 14px;
+    padding: 0 20%;
+}
+footer {
+    /* text-align: left; */
+    margin-top: 48px;
+    margin-bottom: 24px;
+    /* margin-left: 48px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
