@@ -1,0 +1,75 @@
+nav {
+    border: 50px, 100% azure;
+    border-radius: 50px;
+    outline: 12px, solid, black;
+    margin: 25px;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* background-color: #333333; */
+    background-color: azure;
+    display: flex;
+    /* border: 50px, 100%;
+    border-radius: 50px; */
+    
+    
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #57fff9;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: rgb(210, 253, 253);
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden; /* Hidden by default */
+  width: 130px;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1; /* Ensure tooltip is displayed above content */
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

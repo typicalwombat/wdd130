@@ -1,0 +1,289 @@
+
+
+/* ==== GLOBAL RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== THEME VARIABLES ==== */
+:root {
+  --lime: #a4ff4f;
+  --blue: #4fd6ff;
+  --red: #ff5757;
+  --orange: #ff9b4f;
+  --radius: 12px;
+
+  /* Dark mode defaults */
+  --bg-dark: #0f1117;
+  --bg-card: #1a1f27;
+  --text-light: #e8f0ff;
+  --accent-shadow: 0 0 20px rgba(79, 214, 255, 0.3);
+}
+
+/* Light mode override */
+.lightmode {
+  --bg-dark: #f7f9fc;
+  --bg-card: #ffffff;
+  --text-light: #111;
+  --accent-shadow: 0 0 20px rgba(79, 214, 255, 0.2);
+}
+
+/* ==== GENERAL STYLES ==== */
+body {
+  background-color: var(--bg-dark);
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* ==== HEADER & NAV ==== */
+header {
+  background: var(--bg-card);
+  box-shadow: var(--accent-shadow);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#logo {
+  height: 48px;
+  width: 48px;
+  filter: drop-shadow(0 0 10px var(--blue));
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover,
+nav #active {
+  color: var(--blue);
+  transform: scale(1.05);
+}
+
+/* ==== MAIN CONTENT ==== */
+img[alt="Lightmode Solutions Logo"] {
+  margin-top: 2rem;
+  width: 200px;
+  filter: drop-shadow(0 0 15px var(--orange));
+}
+
+caption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: var(--lime);
+  text-shadow: 0 0 10px rgba(164, 255, 79, 0.4);
+}
+
+#purpose-container {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 155, 79, 0.25);
+}
+
+#purpose-container p2,
+#purpose-container p4 {
+  display: block;
+  margin: 0.5rem 0;
+  color: var(--text-light);
+}
+
+/* ==== BUTTONS ==== */
+button {
+  background: linear-gradient(135deg, var(--blue), var(--lime));
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1.2rem;
+  color: #000;
+  font-weight: 700;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--lime);
+}
+
+/* ==== TABLE ==== */
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 87, 87, 0.3);
+}
+
+th {
+  background: var(--red);
+  color: #000;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+td {
+  background: var(--bg-card);
+  padding: 1rem;
+  color: var(--text-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==== LIST ==== */
+ul {
+  list-style: none;
+  margin: 2rem auto;
+  width: fit-content;
+  background: var(--bg-card);
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0 15px rgba(79, 214, 255, 0.2);
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* ==== FORM ==== */
+form {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(164, 255, 79, 0.3);
+}
+
+form h3 {
+  color: var(--lime);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: var(--text-light);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--blue);
+  background: #0b0d11;
+  color: var(--text-light);
+}
+
+.registerbtn {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--lime), var(--orange));
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: var(--bg-card);
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--orange);
+}
+
+/* ==== THEME TOGGLE BUTTON ==== */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg-card);
+  color: var(--text-light);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease,
+    background-color 0.4s ease,
+    color 0.4s ease;
+  box-shadow: 0 0 15px rgba(79, 214, 255, 0.4);
+}
+
+/* Hover glow effect */
+#theme-toggle:hover {
+  transform: scale(1.12);
+}
+
+/* Light mode glow */
+.lightmode #theme-toggle {
+  border-color: var(--orange);
+  box-shadow: 0 0 15px rgba(255, 155, 79, 0.6);
+  color: #111;
+}
+
+/* ==== TRANSITIONS ==== */
+body, header, footer, nav, #purpose-container, table, form, ul {
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
