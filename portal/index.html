@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightmode Solutions</title>
+    <link rel="stylesheet" href="../portal/styles/portal-real.css">
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="images/favicon-small.png" alt="Logo">
+            <img src="" alt="">
+            <a id="active" href="index.html">Home</a>
+            <a href="ice-portal.html">In Class Exercises</a>
+            <a href="wwr-portal.html">White Water Rafting</a>
+            <a href="#blank">About Me</a>
+            <a href="#blank">Contact Me</a>
+             <!-- <div class="dropdown">
+                <button class="dropbtn">Prototype Webpages</button>
+                <div class="dropdown-content">
+                    <a href="ice-portal.html">In Class Exercises</a>
+                    <a href="wwr-portal.html">White Water Rafting</a>
+                </div>
+            </div>  -->
+            <!-- <a href="wwr-portal.html"></a> -->
+        </nav>
+        <!-- <button id="theme-toggle" aria-label="Toggle theme">
+            <span class="icon">🌙</span>
+        </button> -->
+    </header>
+    <figure>
+    <img src="images/Logo-Title.png" alt="Lightmode Solutions Logo">
+    <figcaption>Logo made with generative AI</figcaption>
+    </figure>
+    <h1>Welcome to Lightmode Solutions!</h1>
+    <div id="purpose-container">
+        <p2>This site serves as a portal for me to show off my knowledge of HTML and CSS, and is made as part of the WDD130 class.</p2>
+        <!-- <h3>This page was as part of the WDD130 Class</h3> -->
+        <p4>Made by James Gunther</p4>
+        <br>
+        <button>Go to Portal</button>
+        <button>Go to ICE Pages</button>
+    </div>
+    <hr>
+    <br>
+    <p id="quote">
+        "My favorite food is probably pizza. It's changed over time as my experiences have grown, 
+        but Pizza will forever remain one of my comfort foods. I'm so glad I'm not Lactose Intolerant"
+    </p>
+    <p id="quote2">"Kinda crazy that the website called "Lightmode Solutions" is in darkmode ain't it?"</p>
+    <br>
+    <img src="" alt="">
+    <p4>- James Gunther, CEO</p4>
+    <br>
+    <br>
+    <h2>My Favorite Hobbies</h2>
+    <table>
+        <tr>
+            <th>Video Games</th>
+            <th>Reading</th>
+            <th>Listening to Music</th>
+        </tr>
+        <tr>
+            <td>One of my favorite video games of all time is Hollow Knight: Silksong. Recently 
+                released on September 4th 2025, I have logged 100+ hours playing the game.</td>
+            <td>Sometimes for fun I like to go visit the Library and find an interesting 
+                book and read it. But more often than not I'll be reading from my phone.</td>
+            <td>
+                Whether I'm working, driving, or playing video games, I'm always listening 
+                to music. I'm a big fan of VGM and other instrumental/background tracks, but 
+                I also appreciate a wide variety of other genres.
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <ul>
+        <span class="list-title">My Favorite Foods</span>
+        <li>Bacon</li>
+        <li>pancakes</li>
+        <li>Chicken and Brocoli casserole</li>
+    </ul>
+    
+    <form action="#">
+          <div class="container">
+            <h3>What is your favorite food?</h3>
+            <p>Add your favorite food to the current list</p>
+
+            <label for="food">Favorite Food</label>
+            <input type="text" placeholder="Ex. Pepperoni Pizza" name="food" id="food" required>
+            <button type="submit" class="registerbtn">Submit</button>
+          </div>
+        </form>
+        <hr>
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="#blank">About Me</a>
+        <a href="#blank">Contact</a>
+    </footer>
+
+    <!-- <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = toggleBtn?.querySelector('.icon');
+        const root = document.documentElement;
+
+        if (!toggleBtn) {
+            console.error("❌ Theme toggle button not found!");
+        } else {
+            console.log("✅ Theme toggle button found.");
+        }
+
+        // Load preference or detect
+        const savedTheme = localStorage.getItem('theme');
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        let isLight = savedTheme ? savedTheme === 'light' : prefersLight;
+
+        console.log("📁 Saved theme:", savedTheme);
+        console.log("💡 Prefers light:", prefersLight);
+        console.log("➡️ Starting mode:", isLight ? "Light" : "Dark");
+
+        // Apply theme
+        root.classList.toggle('lightmode', isLight);
+        toggleBtn.classList.add(isLight ? 'light' : 'dark');
+        icon.textContent = isLight ? '☀️' : '🌙';
+
+        // Click toggle
+        toggleBtn.addEventListener('click', () => {
+            isLight = !isLight;
+            console.log("🔁 Switching to", isLight ? "Light" : "Dark");
+            root.classList.toggle('lightmode', isLight);
+            toggleBtn.classList.toggle('light', isLight);
+            toggleBtn.classList.toggle('dark', !isLight);
+            icon.textContent = isLight ? '☀️' : '🌙';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script> -->
+
+
+
+</body>
+</html>
