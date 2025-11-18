@@ -199,6 +199,43 @@ ul li {
   padding-bottom: 4px;
 }
 
+/* === Links === */
+#links {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+#links ul {
+  list-style: none;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: none;
+  border-radius: 0px;
+  border: 0px solid #ffffff;
+  width: 800px;
+}
+
+#links ul li {
+  font-family: "RasterForge";
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  /* width: fit-content; */
+  padding: 1rem ;
+}
+#links ul li a {
+  text-decoration: underline;
+  color: #2da9d8;
+}
+.link-description {
+  margin: .5rem;
+  font-size: 1rem;
+  font-family: "Born2bSportyV2";
+}
+
 /* === FORM === */
 .container h3 {color: orange;
 }
