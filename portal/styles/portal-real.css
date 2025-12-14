@@ -130,6 +130,15 @@ figcaption {
   border: white dotted 2px;
 }
 
+.website-container {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+  border: white solid 2px;
+}
+
 #purpose-container p2,
 #purpose-container p4 {
   display: block;
@@ -137,7 +146,7 @@ figcaption {
 }
 
 /* === BUTTONS === */
-button {
+button, .button {
   background-color: var(--accent-color);
   color: #000;
   border: none;
@@ -147,9 +156,10 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
-button:hover {
+button, .button:hover {
   background-color: #2da9d8;
 }
 
